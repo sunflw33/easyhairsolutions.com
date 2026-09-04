@@ -1,6 +1,6 @@
 {
   "$schema": "https://getcomposer.org/schema.json",
-  "name": "Easyhairsolutions/booking-platform",
+  "name": "Easyhairsolutions/app",
   "type": "project",
   "description": "Easyhairsolutions modern hair appointment and ecommerce platform.",
   "require": {
