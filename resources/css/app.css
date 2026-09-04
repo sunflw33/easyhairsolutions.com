@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@source "../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php";
+@source "../**/*.blade.php";
+@source "../**/*.js";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  --color-ink: #1f2a25;
+  --color-sage: #6f8f7d;
+  --color-deep: #17352b;
+  --color-cream: #f7f3ec;
+  --color-gold: #b89652;
+  --color-line: #e6dfd3;
+}
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { @apply bg-[#fbfaf7] text-ink antialiased; }
+.font-display { font-family: var(--font-display); }
+.card { @apply rounded-3xl border border-line bg-white shadow-[0_18px_50px_rgba(31,42,37,.06)]; }
+.btn-primary { @apply inline-flex items-center justify-center rounded-full bg-deep px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#214a3d]; }
+.btn-soft { @apply inline-flex items-center justify-center rounded-full border border-line bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:border-[#cfc5b6] hover:bg-cream; }
+.field { @apply w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm outline-none transition focus:border-sage focus:ring-4 focus:ring-[#6f8f7d]/10; }
+.badge { @apply inline-flex items-center rounded-full bg-cream px-3 py-1 text-[11px] font-semibold uppercase tracking-[.15em] text-sage; }
